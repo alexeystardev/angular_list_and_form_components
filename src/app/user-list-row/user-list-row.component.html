@@ -1,2 +1,5 @@
-<li class="list-group-item shadow rounded h5">{{userName}}
-<button (click)="delete(index)" type="button" class="btn btn-danger w-100 mt-2">Delete</button></li>
+<th scope="row">{{index+1}}</th>
+<td>{{userName}}</td>
+<td>Email</td>
+<td>Phone</td>
+<td><button (click)="delete(index)" type="button" class="btn btn-danger">Delete</button></td>
