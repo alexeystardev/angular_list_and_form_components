@@ -1,0 +1,17 @@
+<form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control shadow rounded" id="email" #email>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control shadow rounded" id="pwd" #password>
+  </div>
+  <button (click)="onSend(email,password)" type="button" class="btn btn-primary w-100">Send</button>
+</form>
+<hr>
+<div id="formVal" class="mt-4 font-weight-bold">
+	<p>Email: <span class="text-danger" id="emailVal"></span></p>
+	<p>Password: <span class="text-danger" id="passwordVal"></span></p>
+</div>
+<hr>
