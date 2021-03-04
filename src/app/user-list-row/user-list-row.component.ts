@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-user-list-row',
@@ -8,9 +8,20 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UserListRowComponent implements OnInit {
 
 	constructor() { }
- 		@Input() userName;
 
-	 ngOnInit(): void {
+  @Input() index: number
+ @Input() userName: string='test'
+ @Input() lastName: string='test'
+
+ @Output() onNewDelItem=new EventEmitter<any>();
+
+  ngOnInit(): void {
+    console.log(this.userName)
+  }
+
+  delete(index:number):void{
+   
+    this.onNewDelItem.emit(index)
   }
 
 }

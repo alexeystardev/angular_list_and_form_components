@@ -1,5 +1,9 @@
 <ul class="text-center p-0">
-  <li class="list-group-item bg-light" *ngFor="let name of userNames">
-    <app-user-list-row [userName]="name"></app-user-list-row>
+  <li class="list-group-item bg-light" *ngFor="let name of userNames;let i = index">
+    <app-user-list-row 
+	(onNewDelItem)="deleteItem($event)"
+	[index]="i"
+	[lastName]="localLastName"
+	[userName]="name"></app-user-list-row>
   </li>
 </ul>

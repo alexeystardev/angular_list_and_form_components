@@ -12,4 +12,9 @@ constructor() { }
   ngOnInit(): void {
   }
 
+  deleteItem(index:number){
+    console.log(index+"!!!")
+    this.userNames.splice(index,1);
+  }
+
 }
