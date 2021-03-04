@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class UserListComponent implements OnInit {
 
 constructor() { }
-	email=""
-	phone=""
+	email="alexey@google.com"
+	phone="0543000000"
 	userNames = ['Alexey', 'Shlomi', 'Avi', 'Ibrahim'];
   ngOnInit(): void {
   }

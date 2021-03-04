@@ -8,7 +8,7 @@
   </li>
 </ul> -->
 
-<table class="table">
+<table class="table text-center">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -20,7 +20,7 @@
   </thead>
   <tbody>
     <tr app-user-list-row class="shadow rounded h6" *ngFor="let name of userNames;let i = index"
-      (onNewDelItem)="deleteItem($event)" [index]="i" [userName]="name">
+      (onNewDelItem)="deleteItem($event)" [index]="i" [userName]="name" [email]="email" [phone]="phone">
     </tr>
   </tbody>
 </table>
