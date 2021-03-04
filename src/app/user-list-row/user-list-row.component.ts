@@ -10,13 +10,14 @@ export class UserListRowComponent implements OnInit {
 	constructor() { }
 
   @Input() index: number
- @Input() userName: string='test'
- @Input() lastName: string='test'
+  @Input() userName: string='userName'
+  @Input() email: string='Email'
+  @Input() phone: string='Phone'
 
  @Output() onNewDelItem=new EventEmitter<any>();
 
   ngOnInit(): void {
-    console.log(this.userName)
+  
   }
 
   delete(index:number):void{
