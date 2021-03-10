@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
  @Input() num: number
+
   constructor() { }
 
  @Output() menuChange=new EventEmitter<number>();
