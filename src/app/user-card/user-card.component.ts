@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class UserCardComponent implements OnInit {
 
   constructor() { }
-  img="https://picsum.photos/200"
+  	cardsPics = ['https://picsum.photos/200', 'https://picsum.photos/200', 'https://picsum.photos/200'];
+//   img="https://picsum.photos/200"
   ngOnInit(): void {
   }
 

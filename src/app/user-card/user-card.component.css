@@ -1,0 +1,6 @@
+ul.rating {
+    display: flex;
+    list-style: none;
+	margin: auto;
+    padding: 0;
+}

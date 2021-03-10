@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -12,9 +12,14 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSend(email,password) {
-	  document.getElementById('emailVal').innerText=email.value
-	  document.getElementById('passwordVal').innerText=password.value
-	}
+  form={
+	  email:'',
+	  firstName:'',
+	  password:''
+  }
+
+  onSend(){
+	  console.log(this.form)
+  }
 
 }

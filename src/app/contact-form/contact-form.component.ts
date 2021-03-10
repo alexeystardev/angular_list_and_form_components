@@ -11,5 +11,13 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
+contact={
+	name:"",
+	email:"",
+	msg:""
+}
 
+onSendMsg(){
+	console.log(this.contact)
+}
 }
