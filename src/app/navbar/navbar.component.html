@@ -1,25 +1,27 @@
-<div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">ANGULAR</a>
+
+  <nav class="navbar border rounded shadow navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">ANGULAR</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link btn btn-outline-primary rounded" (click)="activeMenu(0)">User List</a>
+		  <li class="nav-item mr-2">
+		    <a class="nav-link  btn btn-outline-primary rounded" (click)="activeMenu(0)">Home</a>
+		  </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link btn btn-outline-primary rounded" (click)="activeMenu(1)">User List</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link  btn btn-outline-primary rounded" (click)="activeMenu(2)">Registration</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link  btn btn-outline-primary rounded" (click)="activeMenu(3)">Cards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  btn btn-outline-primary rounded" (click)="activeMenu(1)">Registration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  btn btn-outline-primary rounded" (click)="activeMenu(2)">Cards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  btn btn-outline-primary rounded" (click)="activeMenu(3)">Contact us</a>
+          <a class="nav-link  btn btn-outline-primary rounded" (click)="activeMenu(4)">Contact us</a>
         </li>
       </ul>
     </div>
   </nav>
-</div>

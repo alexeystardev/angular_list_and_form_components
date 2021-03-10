@@ -11,6 +11,7 @@ import { UserListRowComponent } from './user-list-row/user-list-row.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     UserListRowComponent,
     UserCardComponent,
     NavbarComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
