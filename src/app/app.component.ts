@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 	ngOnInit():void {
 	}
 
-	showComp(num:number){
+	showMenu(num:number){
 		this.menu=num
 	}
 }

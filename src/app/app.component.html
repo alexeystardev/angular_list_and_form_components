@@ -1,3 +1,5 @@
-	<app-navbar (menuChange)="showComp($event)" ></app-navbar>
+	<app-navbar (menuChange)="showMenu($event)"></app-navbar>
       <app-user-list *ngIf="menu===0"></app-user-list>
       <app-form *ngIf="menu===1"></app-form>
+	  <app-user-card *ngIf="menu===2"></app-user-card>
+	  <app-contact-form *ngIf="menu===3"></app-contact-form>

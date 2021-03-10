@@ -10,6 +10,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserListRowComponent } from './user-list-row/user-list-row.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     UserListComponent,
     UserListRowComponent,
     UserCardComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
