@@ -7,19 +7,18 @@ import { ButtonService } from '../services/button.service';
   styleUrls: ['./plusminus.component.css']
 })
 export class PlusminusComponent implements OnInit {
-number:number=0
+
 	constructor(private cs: ButtonService) { }
 
 	ngOnInit(): void {
-		this.number=this.cs.getNumber()
 		}
 		
 		plusMe(number){
-		this.cs.plus(this.number++)
+		this.cs.plus(this.cs.number++)
 		}
 
 		minusMe(number){
-		this.cs.minus(this.number--)
+		this.cs.minus(this.cs.number--)
 		}
 
 }

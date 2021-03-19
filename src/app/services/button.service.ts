@@ -18,11 +18,9 @@ number:number=0
 
 		plus(number:number){
 			this.numberStatus.next(number)
-			this.number=number
 		}
 
 		minus(number:number){
 			this.numberStatus.next(number)
-			this.number=number
 		}
 }

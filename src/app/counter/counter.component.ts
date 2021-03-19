@@ -10,7 +10,6 @@ export class CounterComponent implements OnInit {
 
 	constructor(private cs: ButtonService) { }
 	
-	// color:string='red'
 	number:number=0
 
   ngOnInit(): void {
@@ -19,8 +18,5 @@ export class CounterComponent implements OnInit {
 		this.number=number
 	})
 
-		// this.cs.colorStatus.subscribe((color)=>{
-		// 	this.color=color
-		// })
 }
 }
