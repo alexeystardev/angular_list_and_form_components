@@ -13,6 +13,9 @@ import { UserCardComponent } from './user-card/user-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HeaderComponent } from './header/header.component';
+import { PlusminusComponent } from './plusminus/plusminus.component';
+import { CounterComponent } from './counter/counter.component';
+import { CountBlockComponent } from './count-block/count-block.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HeaderComponent } from './header/header.component';
     UserCardComponent,
     NavbarComponent,
     ContactFormComponent,
-    HeaderComponent
+    HeaderComponent,
+    PlusminusComponent,
+    CounterComponent,
+    CountBlockComponent
   ],
   imports: [
     BrowserModule,

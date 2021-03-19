@@ -4,6 +4,7 @@ import { FormComponent } from './form/form.component';
 import { HeaderComponent } from './header/header.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserCardComponent } from './user-card/user-card.component';
+import { CountBlockComponent } from './count-block/count-block.component';
 
 
 const arr: Routes = [
@@ -15,6 +16,7 @@ const arr: Routes = [
 {path: 'registration', component: FormComponent},
 {path: 'cards', component: UserCardComponent},
 {path: 'contact', component: ContactFormComponent},
+{path: 'plusminus', component: CountBlockComponent},
 
 ];
 

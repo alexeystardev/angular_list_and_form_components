@@ -6,20 +6,24 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ButtonService {
 
-number: number=0;
-counter = new BehaviorSubject<number>(this.number)
+	color: string='black';
+colorStatus = new BehaviorSubject<string>(this.color)
+	
+	constructor() { }
 
-  constructor() { }
-
-  getPm(){
-	return this.number;
+  getColor(){
+	return this.color
   }
 
-    plus(num:number){
-      return num+1;
-    }
+  setColor(color:string){
+		this.colorStatus.next(color)
+  }
+
+    // plus(number:number){
+    //   return number+1;
+    // }
     
-    minus(num:number){
-      return num-1;
-    }
+    // minus(num:number){
+    //   return num-1;
+    // }
 }

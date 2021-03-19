@@ -1,0 +1,17 @@
+<!-- <div class="text-center">
+  <div class="btn-group" role="group" aria-label="Basic example">
+<button id="count" type=" button" (click)="setNumber()" class=" btn btn-secondary" #number>+</button> 
+    <h1 [ngStyle]="{color:color}">COLOR</h1>
+    <button type="button" class="btn btn-secondary">-</button>
+  </div>
+  <app-counter></app-counter>
+<p>{{number}}</p>
+</div> -->
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Enter Color" aria-label="Recipient's username"
+    aria-describedby="basic-addon2" #color>
+  <div class="input-group-append">
+    <button (click)="save(color.value)" class="btn btn-outline-secondary" type="button">PLUS</button>
+  </div>
+</div>
