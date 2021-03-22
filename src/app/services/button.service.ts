@@ -8,6 +8,7 @@ export class ButtonService {
 
 number:number=0
 
+
 	numberStatus = new BehaviorSubject<number>(this.number)
 	
 	constructor() { }

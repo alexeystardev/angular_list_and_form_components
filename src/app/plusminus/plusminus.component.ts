@@ -8,6 +8,7 @@ import { ButtonService } from '../services/button.service';
 })
 export class PlusminusComponent implements OnInit {
 
+
 	constructor(private cs: ButtonService) { }
 
 	ngOnInit(): void {
@@ -20,7 +21,6 @@ export class PlusminusComponent implements OnInit {
 		minusMe(number){
 		this.cs.minus(this.cs.number--)
 		}
-
 }
 
 
